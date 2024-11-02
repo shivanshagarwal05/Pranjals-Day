@@ -7,13 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 10px; /* Padding for mobile devices */
             background-color: #f5f5f5;
-            padding: 10px; /* Add padding to avoid cutting off text on small screens */
         }
         .container {
             text-align: left; /* Align text to the left for a letter format */
@@ -21,8 +17,12 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 100%; /* Allow the container to take the full width on smaller screens */
+            max-width: 100%; /* Allow the container to take full width */
             overflow-wrap: break-word; /* Prevent text from overflowing */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: flex-start; /* Align items at the top */
+            height: auto; /* Allow the height to adjust based on content */
         }
         h1 {
             font-size: 1.8em; /* Use relative units for better responsiveness */
@@ -31,6 +31,7 @@
         }
         p {
             font-size: 1em; /* Use relative units for better responsiveness */
+            margin: 10px 0; /* Space between paragraphs */
         }
         a {
             text-decoration: none;
@@ -55,9 +56,8 @@
 </head>
 <body>
     <div class="container">
-        
+        <h1>Dear Pranjal,</h1>
         <p>
-            <h1>Dear Pranjal,</h1>
             I don't know if I should call you babes or Pranjal right now. But one thing that I am sure of is that you are gonna call me baby when we onboard the flight.<br><br>
 
             This is not just another reassurance text this time, instead this is something that I wanted to tell you for so long -<br>
