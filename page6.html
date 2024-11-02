@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Poem</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically */
+            margin: 0;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #fce4ec, #f8bbd0); /* Light pink gradient */
+            color: #333; /* Dark text for better readability */
+            text-align: center;
+            height: 100vh;
+            overflow-y: auto; /* Allows scrolling if content exceeds height */
+            box-sizing: border-box; /* Include padding in height */
+        }
+        h1 {
+            font-size: 2em; /* Heading size */
+            margin: 10px 0; /* Reduced margin */
+            color: #d81b60; /* Deep pink for the heading */
+        }
+        .poem {
+            font-size: 1.2em; /* Slightly larger text for the poem */
+            line-height: 1.5; /* Adjusted line-height for better readability */
+            margin: 10px 0; /* Reduced margin */
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 90%; /* Responsive width */
+        }
+        .buttons {
+            margin-top: 10px; /* Reduced space between poem and buttons */
+            margin-bottom: 20px; /* Margin from bottom */
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 1em;
+            margin: 5px; /* Adjusted margin for buttons */
+            cursor: pointer;
+            background-color: #d81b60; /* Deep pink for buttons */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:disabled {
+            background-color: #ccc; /* Disabled button color */
+            cursor: not-allowed;
+        }
+        button:hover:not(:disabled) {
+            background-color: #c2185b; /* Darker pink on hover */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+   <h1>This is for you my sweetheart💖</h1>
+    <div class="poem">
+        You’re the most beautiful, it’s true,<br>
+        Adorable in all you do.<br>
+        Your smile lights up the darkest day,<br>
+        In your embrace, I wish to stay.<br><br>
+
+
+        Forever with you is my only dream,<br>
+        Through life’s river and every stream.<br>
+        Your love, my heart, will forever keep,<br>
+        In your arms, my soul finds peace so deep.
+    </div>
+
+    <div class="buttons">
+        <button disabled>Mai thak gayi, ab bnd kr</button>
+        <button onclick="window.location.href='page7.html'">Read More</button>
+<button onclick="location.href='page5.html'">Back</button>
+    </div>
+
+</body>
+</html>

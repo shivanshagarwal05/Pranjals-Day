@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Starts from the top */
+            margin: 0;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #f8bbd0, #d81b60); /* Light pink to deep pink */
+            color: #fff; /* White text for better contrast */
+            text-align: center;
+            height: 100vh;
+            overflow-y: auto; /* Allows scrolling if content exceeds height */
+            box-sizing: border-box; /* Include padding in height */
+        }
+        h1 {
+            font-size: 2.5em; /* Increased size for emphasis */
+            margin: 20px 0; /* Adjusted margins */
+            color: #ffeb3b; /* Bright yellow for the heading */
+        }
+        .language-list {
+            font-size: 1.1em; /* Slightly larger text for better readability */
+            line-height: 1.5; /* Adjusted line-height for better readability */
+            margin: 20px 0;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            width: 90%; /* Responsive width */
+        }
+        .buttons {
+            margin-top: auto; /* Pushes buttons to the bottom */
+            margin-bottom: 20px; /* Margin from bottom */
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 1em;
+            margin: 10px 5px;
+            cursor: pointer;
+            background-color: #ff6f61; /* Bright coral for buttons */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        button:hover:not(:disabled) {
+            background-color: #e55b50; /* Darker coral on hover */
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 20px; /* Margin for better spacing */
+            font-size: 1em;
+            font-style: italic;
+            font-weight: bold;
+            color: #ffeb3b; /* Bright yellow for footer text */
+            padding: 0 20px;
+            width: 90%; /* Responsive width */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aaj meri ek khaas mitaar ka budday hai 😊, oye hoye shaba shabaa...</h1>
+    
+    <div class="language-list">
+        Happy Birthday 🎂<br> 
+        जन्मदिन मुबारक हो 🎂<br> 
+        ਜਨਮਦਿਨ ਮੁਬਾਰਕ ਹੋ 🎂<br> 
+        Feliz cumpleaños 🎂<br> 
+        Joyeux anniversaire 🎂<br> 
+        Alles Gute zum Geburtstag 🎂<br> 
+        Buon compleanno 🎂<br> 
+        生日快乐 🎂<br> 
+        お誕生日おめでとう 🎂<br> 
+        생일 축하합니다 🎂<br> 
+        С днём рождения 🎂<br> 
+        عيد ميلاد سعيد 🎂<br> 
+        Feliz aniversário 🎂<br> 
+        Gefeliciteerd met je verjaardag 🎂<br> 
+        Doğum günün kutlu olsun 🎂<br> 
+        Grattis på födelsedagen 🎂<br> 
+        Gratulerer med dagen 🎂<br> 
+        Tillykke med fødselsdagen 🎂<br> 
+        สุขสันต์วันเกิด 🎂<br> 
+        Chúc mừng sinh nhật 🎂<br> 
+        Maligayang kaarawan 🎂<br> 
+        Hyvää syntymäpäivää 🎂
+    </div>
+
+    <div class="footer">
+        I wasted my 19 years of life being single, but now I want to spend all my life mingling with you.
+    </div>
+
+    <div class="buttons">
+        <button disabled>Chal, chal ud mat, bahut hoagaya</button>
+        <button onclick="window.location.href='page6.html'">I want to read more</button>
+<button onclick="location.href='page4.html'">Back</button>
+    </div>
+
+</body>
+</html>

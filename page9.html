@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Day Plan</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #ffecf0, #f8bbd0); /* Soft pink gradient */
+            color: #333;
+            text-align: center;
+            height: 100vh;
+            overflow-y: auto; /* Allows scrolling if content exceeds height */
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2em; /* Title size */
+            color: #d81b60; /* Deep pink for title */
+            margin: 20px 0; /* Margin around title */
+        }
+        .buttons {
+            margin-top: 30px; /* Space above buttons */
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            align-items: center; /* Center buttons */
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 1em;
+            margin: 5px; /* Adjusted margin for buttons */
+            cursor: pointer;
+            background-color: #d81b60; /* Deep pink for button */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+            width: 80%; /* Make buttons a consistent width */
+        }
+        button:hover {
+            background-color: #c2185b; /* Darker pink on hover */
+            transform: scale(1.05);
+        }
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+            justify-content: center; /* Center the modal */
+            align-items: center; /* Center the modal */
+        }
+        .modal-content {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%; /* Modal width */
+            max-width: 400px; /* Max modal width */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Do You Accept My Plan for My D'Day?</h1>
+
+    <div class="buttons">
+        <button onclick="showErrorModal()">I don't want any surprises</button>
+        <button onclick="showErrorModal()">Just spend time with your family</button>
+        <button onclick="showErrorModal()">No please, I don't want anything</button>
+        <button onclick="window.location.href='page10.html'">I am dying to meet you!!!</button>
+        <button onclick="window.location.href='page10.html'">I want more n more surprises now, I'm super excited...</button>
+<button onclick="location.href='page8.html'">Back</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeErrorModal()">&times;</span>
+            <h2>Error 404</h2>
+            <p>Try another option 🤭</p>
+        </div>
+    </div>
+
+    <script>
+        function showErrorModal() {
+            document.getElementById("errorModal").style.display = "flex";
+        }
+
+        function closeErrorModal() {
+            document.getElementById("errorModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
